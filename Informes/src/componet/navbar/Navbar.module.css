@@ -1,0 +1,23 @@
+.navbarContenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    align-items: center;
+    background-color: white;
+}
+
+.logo img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-right: 45%;
+    font-size: 1.5em;
+  
+    
+}

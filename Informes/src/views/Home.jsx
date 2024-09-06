@@ -1,9 +1,13 @@
+import Header from "../componet/header/Header";
+import Navbar from "../componet/navbar/Navbar";
+
 
 export default function Home(){
     return (
         <>
             <div>
-                <h1>Informes Podologicos</h1>
+                <Header/>
+                <Navbar/>
             </div>
         
         </>

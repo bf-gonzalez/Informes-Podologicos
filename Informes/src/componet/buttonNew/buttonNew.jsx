@@ -2,7 +2,7 @@
 export default function ButtonNew(){
     return (
         <div>
-            <button className="nuevoInfo">Nuevo Informe</button>
+            <button className="crear">Crear Informe</button>
         </div>
     )
 }
