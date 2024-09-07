@@ -1,8 +1,9 @@
+import styles from "./ButtonNew.module.css"
 
-export default function ButtonNew(){
+export default function ButtonNew({ text }){
     return (
         <div>
-            <button className="crear">Crear Informe</button>
+            <button className={styles.boton}>{text}</button>
         </div>
     )
 }

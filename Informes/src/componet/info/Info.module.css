@@ -1,0 +1,16 @@
+.contenedorInformes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.contenedorInformes img{
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+}
+.contenedorInformes h2{
+    font-size: 3em;
+}
