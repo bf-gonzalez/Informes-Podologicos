@@ -1,6 +1,22 @@
-.boton{
-    width: 120px;
-    height: 50px;
-    background-color:  rgba(0, 255, 255, 0.781);
-    border-radius: 50px;
-}
+.boton {
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    color: #fff; /* Color del texto */
+    background-color: #ff0055; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    display: inline-flex; /* Alineación en línea y ajuste del contenido */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Alinear horizontalmente */
+  }
+  
+  .boton:hover {
+    background-color: #e6004c; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+  }
+  
+  .boton:active {
+    transform: scale(0.95); /* Efecto de presionado */
+  }

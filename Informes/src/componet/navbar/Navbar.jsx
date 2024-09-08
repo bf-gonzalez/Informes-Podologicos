@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Logo from "../../assets/Logo sin fondo.png"
 import styles from "./Navbar.module.css"
 
@@ -8,8 +9,13 @@ export default function Navbar(){
                 <img src={Logo} alt="logo" />
             </div>
             <div className={styles.botones}>
-                <span>Inicio</span>
-                <span>Nuevo Informe</span>
+                <Link to="/">
+                    <span>Inicio</span>
+                </Link>
+
+                <Link to= "/Informe">
+                    <span>Nuevo Informe</span>
+                </Link>
             </div>
             
 

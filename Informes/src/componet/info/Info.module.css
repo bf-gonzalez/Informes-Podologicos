@@ -1,16 +1,53 @@
-.contenedorInformes{
+.contenedorInformes {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Cambio a columna para mejor respuesta en dispositivos móviles */
+    align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 40px;
+    gap: 20px;
+    color: #333; /* Color de texto más suave para mejorar la legibilidad */
+    padding: 20px; /* Añadido padding para evitar que el contenido esté demasiado pegado a los bordes */
+    background-color: #f9f9f9; /* Fondo ligero para resaltar el contenido */
+    border-radius: 10px; /* Bordes redondeados para un diseño más suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad al contenedor */
 }
 
-.contenedorInformes img{
+.contenedorInformes img {
     object-fit: cover;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 400px; /* Asegura que la imagen no sea más ancha que 400px */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
 }
-.contenedorInformes h2{
-    font-size: 3em;
+
+.contenedorInformes h2 {
+    font-size: 2em;
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #ff0055; /* Color llamativo para el título */
+}
+
+.contenedorInformes p {
+    font-size: 1em;
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    max-width: 800px; /* Limita el ancho del párrafo para una lectura más cómoda */
+    margin: 0 auto; /* Centra el párrafo horizontalmente */
+}
+
+.contenedorInformes a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+@media (min-width: 768px) {
+    .contenedorInformes {
+        flex-direction: row; /* Cambio a fila en pantallas más grandes */
+        text-align: left; /* Alineación a la izquierda en pantallas grandes */
+    }
+    
+    .contenedorInformes div {
+        flex: 1;
+    }
+    
+    .contenedorInformes p {
+        margin: 0; /* Elimina el margen en pantallas grandes */
+    }
 }
