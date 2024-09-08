@@ -1,0 +1,50 @@
+.container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #000;
+    
+  }
+  
+  .title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .button {
+    background-color: #ff0055;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #e6004c;
+  }
+  
+  @media (min-width: 600px) {
+    .buttons {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .button {
+      flex: 1;
+      max-width: 200px;
+    }
+  }

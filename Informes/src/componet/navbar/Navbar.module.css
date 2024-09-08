@@ -1,0 +1,53 @@
+.navbarContenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em; /* Añadido padding para mejor espaciado */
+    background-color: #fff; /* Fondo blanco para la barra de navegación */
+    border-bottom: 1px solid #d3d3d3; /* Línea sutil en la parte inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.logo img {
+    height: 80px; /* Ajuste para un tamaño más compacto */
+    width: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Ajustado para un espaciado más suave entre los botones */
+    font-size: 1.2em; /* Tamaño de fuente reducido para una apariencia más profesional */
+    margin: 0; /* Eliminado margen derecho para una alineación correcta */
+}
+
+.botones a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Color del texto para los enlaces */
+    padding: 0.5em 1em; /* Espaciado interno para los botones */
+    border-radius: 5px; /* Bordes redondeados para un diseño más suave */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para efectos de hover */
+}
+
+.botones a:hover {
+    background-color: #ff0055; /* Color de fondo en hover */
+    color: white; /* Color del texto en hover */
+}
+
+@media (max-width: 768px) {
+    .navbarContenedor {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    .botones {
+        margin-top: 1em; /* Añadido margen superior para los botones en pantallas pequeñas */
+        gap: 15px; /* Ajuste de espaciado en pantallas pequeñas */
+    }
+
+    .logo img {
+        height: 60px; /* Ajustado para pantallas pequeñas */
+    }
+}
