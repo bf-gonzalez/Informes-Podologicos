@@ -12,7 +12,7 @@ const InformeCreado = ({ form, onNuevoFormulario }) => {
       <div className={styles.buttonContainer}>
         <PDFDownloadLink
           document={<MyDocument formData={form} />}
-          fileName="informe_paciente.pdf"
+          fileName={`${form.nombre}_informe.pdf`}
         >
           {({ loading }) =>
             loading ? 'Generando PDF...' : (

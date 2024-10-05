@@ -80,7 +80,7 @@ export default function FormPaciente() {
         { label: "Título", name: "titulo", type: "text" },
         { label: "Fecha de Primera Atención", name: "fechaPrimeraAtencion", type: "date" },
         { label: "Nombre del Paciente", name: "nombre", type: "text" },
-        { label: "Diagnóstico", name: "diagnostico", type: "text" },
+        { label: "Diagnóstico presuntivo", name: "diagnostico", type: "text" },
         { label: "Tratamiento 1", name: "tratamiento1", type: "text" },
         { label: "Tratamiento 2", name: "tratamiento2", type: "text", visible: tratamientosVisibles >= 2 },
         { label: "Tratamiento 3", name: "tratamiento3", type: "text", visible: tratamientosVisibles >= 3 },
